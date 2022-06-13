@@ -1,0 +1,138 @@
+.Projects{
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    overflow-y: scroll;
+    /* padding: 50px; */
+    font-family: monospace;
+    position: relative;
+}
+.Projects > h1{
+    font-size: 36px;
+    margin-bottom: -10px;
+    padding-inline: 80px;
+}
+.project__row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.project{
+    position: relative;
+    display: flex;
+    height: 260px;
+    width: 500px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 20px;
+    border: solid 10px #111;
+    box-shadow: 0 0 50px #000;
+    border-radius: 2px;
+}
+.project > img{
+    height: 260px;
+    width: 500px;
+    object-fit: contain;
+    transition: .5s;
+}
+.prevBtn{
+    top: 45%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.4);
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1;
+    transition: .5s;
+    font-size: x-large;
+}
+.prevBtn:hover{
+    background-color: #111;
+}
+.nextBtn:hover{
+    background-color: #111;
+}
+
+.nextBtn{
+    top: 45%;
+    right: 0;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.4);
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1;
+    transition: .5s;
+    font-size: x-large;
+}
+.project3{
+    margin-bottom: 100px;
+}
+
+/*Project Info Hover*/
+.projectInfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.95);
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+    overflow: hidden;
+    padding: 0px 40px;
+    letter-spacing: .5px;
+    font-size: larger;
+}
+/* .project:hover .projectInfo{
+    top: 0%;
+} */
+.getProjectLink > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.getProjectLink{
+    padding: 10px;
+    background-color: royalblue;
+    width: max-content;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.getProjectLink:hover{
+    background-color: rgb(37, 69, 164);
+    transform: scale(1.1);
+}
+.projectInfo{
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+
+.backToSkillBox{
+    border-radius: 0 0 10px 10px;
+    position:absolute;
+    top: 0;
+    left: 47%;
+    /* right: 50%; */
+    padding: 10px 20px;
+    background-color: #222;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+}
+.backToSkillBox:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0);
+}
+.info_tutorial{
+    position: fixed;
+    right: -50px;
+    top: 72%;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    transform: rotate(-90deg);
+    text-shadow: 0 0 1px rgba(0, 0, 0);
+    pointer-events: none;
+}

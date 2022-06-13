@@ -1,0 +1,303 @@
+.Personal{
+    font-family: monospace;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    transform: translateY(-50vh);
+}
+.backBtn{
+    padding: 10px 20px;
+    background-color: #333;
+    position:absolute;
+    left: 0;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    transition: .5s;
+    letter-spacing: .5px;
+}
+.backBtn:hover{
+    box-shadow: 0 0 20px black;
+}
+/* .Personal > img{
+    height: 600px;
+    width: 100%;
+    object-fit: contain;
+    animation: float 2s linear infinite;
+}
+
+@keyframes float {
+    50%{transform: translateY(50px);}
+} */
+.frontScreen{
+    position: relative;
+    height: 80vh;
+    width: 80%;
+    box-shadow: 0 0 60px #000;
+}
+.PersonalIntro{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    animation:  3s linear 5s forwards;
+}
+@keyframes branding {
+    99%{opacity: 0;}
+    100%{opacity: 0; display: none;}
+}
+.PersonalIntro > img{
+    object-fit: contain;
+    height: 90%;
+    width: 100%;
+}
+.screen
+{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.redScreen{
+    background-color: #ff2c21;
+    animation:  .6s ease-out 1s forwards,  .6s ease-out 5s forwards;
+}
+.orangeScreen{
+    background-color: #fb8300;
+    animation:  .6s ease-out 1.3s forwards,  .6s ease-out 4.7s  forwards;
+}
+.yellowScreen{
+    background-color: #edcc21;
+    animation:  .6s ease-out 1.6s forwards,  .6s ease-out 4.4s forwards;
+}
+.greenScreen{
+    background-color: #00a04e;
+    animation:  .6s ease-out 1.9s forwards,  .6s ease-out 4.1s forwards;
+}
+.blueScreen{
+    background-color: #00c0dd;
+    animation:  .6s ease-out 2.2s forwards, .6s ease-out 3.8s forwards;
+}
+.purpleScreen{
+    background-color: #752f8d;
+    animation:  .6s ease-out 2.5s forwards,  .6s ease-out 3.5s forwards;
+}
+
+@keyframes screenAnimate {
+    100%{right: 0%;}
+}
+@keyframes screenAnimateReverse {
+    100%{bottom: 100%;}
+}
+
+.myIntroduction{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.myIntroduction_page1{
+    position: relative;
+    overflow: hidden;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+.myIntroduction_sec2 > p {
+    padding-inline: 20px;
+}
+.myIntroduction_sec1 > img{
+    height: 250px;
+    width: 50%;
+    object-fit: contain;
+}
+.myIntroduction_sec2 > img{
+    height: 200px;
+    width: 50%;
+    object-fit: contain;
+}
+.myIntroSections{
+    margin: 10px;
+}
+.myIntroduction_sec1{
+    position: relative;
+    display: flex;
+    right: 100%;
+    transition: .5s;
+    height: 50%;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    animation:  .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 9s forwards;
+}
+@keyframes slideIn {
+    100%{right: 0;}
+}
+
+.myIntroduction_sec2{
+    position: relative;
+    left: 100%;
+    display: flex;
+    width: 80%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    animation:  .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 10s forwards;
+}
+@keyframes slideIn2 {
+    100% {left: 0;}
+}
+.myIntroduction_nextBtn{
+    background-color: #222;
+    padding: 10px;
+    position: absolute;right: 0;
+    animation:  .5s ease 10s forwards;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+@keyframes nextBtn {
+    100% {
+        opacity: 1;
+    }
+}
+
+.myIntroduction_page2{
+    position: absolute;
+    left: 100%;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: .5s;
+}
+.myIntroduction_sec3{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.myIntroduction_sec3>p{
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.myIntroduction_sec3 >p > span{
+    font-weight: bold;
+    font-size: 30px;
+}
+.myIntroduction_sec3 > img{
+    max-height: 280px;
+    margin: 10px;
+    width: max-content;
+    object-fit: contain;
+    border-radius: 50px / 60px;
+}
+
+.myIntroduction_page3 {
+    position: absolute;
+    left: 100%;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: .5s;
+}
+.myIntroduction_sec4{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.myIntroduction_sec4>p{
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.myIntroduction_sec4 >p > span{
+    font-weight: bold;
+    font-size: 30px;
+}
+.myIntroduction_sec4 > img{
+    max-height: 250px;
+    margin: 10px;
+    width: max-content;
+    object-fit: contain;
+    border-radius: 50px / 60px;
+}
+.myIntroduction_page4 {
+    position: absolute;
+    left: 100%;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    font-size: 20px;
+    transition: .5s;
+}
+.myIntroduction_sec5{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.myIntroduction_sec5>p{
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.myIntroduction_sec5 >p > span{
+    font-weight: bold;
+    font-size: 30px;
+}
+.myIntroduction_sec5 > img{
+    max-height: 200px;
+    width: max-content;
+    object-fit: contain;
+}
+.social_icons>a{
+    text-decoration: none;
+}
+.social_icons > a > img{
+    height: 200px;
+    width: max-content;
+    object-fit: contain;
+    transition: .5s;
+    cursor: pointer;
+}
+.social_icons >a>img:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,196 @@
+.Intro{
+    height: 100vh;
+    width: 100%;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* Intro Animation */
+
+.intro {
+
+    height: 100vh;
+    width: 100%;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: color 500ms ease-in-out 4s forwards;
+}
+
+@keyframes color {
+    to {
+        color: white;
+    }
+}
+
+/*  */
+/* @keyframes final {
+    to {
+        top: 0;
+    }
+} */
+
+.intro p {
+    font-size: 20px;
+}
+
+#myName {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-weight: lighter;
+}
+
+#myName::after,
+#myName::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#myName::before {
+    animation: typewriter 2s steps(25) 1s forwards;
+    background-color: #111;
+
+}
+
+@keyframes typewriter {
+    100% {
+        left: 100%;
+    }
+}
+
+#myName::after {
+    animation: typewriterBar 2s steps(25) 1s forwards,
+        blink 1s steps(25) infinite,
+        Barcolor 1s ease-in-out forwards;
+    background-color: #222;
+    width: 3px;
+
+}
+
+@keyframes Barcolor {
+    100% {
+        background-color: whitesmoke;
+    }
+}
+
+@keyframes typewriterBar {
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+
+/* Get Started PopUp */
+.Start {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -200px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    animation: start_popUp .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 5s forwards;
+}
+
+@keyframes start_popUp {
+    100% {
+        bottom: 100px;
+        transform: rotate(0deg);
+    }
+}
+
+.triangle {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 50px solid whitesmoke;
+    transition: .6s;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.Start>p {
+    color: #222;
+    letter-spacing: .5px;
+    transition:.6s;
+}
+
+.start_upper_triangle {
+    border-color: #222 transparent transparent #222;
+}
+
+.start_lower_triangle {
+    border-color: transparent #222 #222 transparent;
+}
+
+.Start:hover .triangle {
+    border-radius: 0;
+    transform: translate(-40px, -10px);
+}
+
+.Start:hover .start_upper_triangle{
+    transform: translate(-40px, -10px);
+}
+
+.Start:hover p{
+    color: whitesmoke;
+}
+
+.Start:hover .start_lower_triangle{
+    transform: translate(40px, 10px);
+}
+
+
+/* PopUpGlow */
+.popUpGlow {
+    position: absolute;
+    bottom: -10px;
+    height: 4px;
+    width: 100px;
+    background-color: #222;
+    animation: glow .5s ease 4s forwards;
+}
+
+@keyframes glow {
+    100% {
+        bottom: 0;
+    }
+}
+
+.popUpGlow::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    height: 10px;
+    width: 100%;
+    background-color: whitesmoke;
+    filter: blur(20px);
+    animation: blur .5s ease 4.5s forwards;
+}
+
+@keyframes blur {
+    100% {
+        bottom: -10px;
+    }
+}
