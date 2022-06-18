@@ -4,11 +4,16 @@
 }
 body
 {
-    background-image: url("../img/bg-png.png");
+    background-image: url("../img/Asset\ 5-8.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 900;
+}
+:root {
+    --baseColor: #ff4a59 ;
+    --white: #ffffff;
 }
 ::-webkit-scrollbar
 {
@@ -21,13 +26,36 @@ body
 }
 ::-webkit-scrollbar-thumb
 {
-    background-color: #d9475c;
+    background-color: var(--baseColor);
 }
+/* FIXED PHONE NUMBERS */
+
+.phone_number{
+    z-index: 999;
+    position: fixed;
+    background-color: #ff4a59;
+    padding: 10px;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 0 5px #ff4a59;
+}
+.phone_number:hover{
+    box-shadow: 0 0 20px #ff4a59;
+}
+
+
+
+
 
                                      /*HEADER*/
 .Header
 {
-    background-color: #d9475c;
+    background-color: var(--baseColor);
    /* background-image:linear-gradient(to right , #ff5a60, #d83177cc);
     /*background-color: #ff5a60;
     /*background-color: #1c1c1c;
@@ -48,6 +76,12 @@ body
     font-weight: bold;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.Logo > img{
+    transform: translateY(10px);
+    height: 100px;
+    width: max-content;
+    object-fit: contain;
+}
 .Navigation_Bar
 {
     height: 100px;
@@ -55,11 +89,11 @@ body
     justify-content: center;
     align-items: center;
 }
-div.sticky
+/* div.sticky
 {
     position: sticky;
     top:0px;
-}
+} */
 .Link
 {
     height: 60px;
@@ -101,18 +135,24 @@ div.sticky
 .Bg_img
 {
     height: 550px;
-    background-image: url("../img/background_img.png");
+    /* background-image: url("../img/background_img.png"); */
+    background-image: url("../img/finalBg.jpg");
+    /* background-image: url("https://images.pexels.com/photos/5759233/pexels-photo-5759233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    /* background-image: url("https://nearmetrade.com/local/public/vendor/Marriage%20Bureau%20patna6.jpg"); */
     background-size: cover;
+    background-position: center;
+    /* filter: invert(20%); */
     background-repeat: no-repeat;
     display: flex;
 }
-.Registeration_form
+/* .Registeration_form
 {
+    display: none;
    /* background-image: url("../img/bg-png.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;*/
-    /*background-color: rgba(255, 255, 255, 0.1);*/
+    /*background-color: rgba(255, 255, 255, 0.1);
     background-color:#1c1c1c77;
    /* background-image:linear-gradient(to top , #ff5a60c5, #f05998cc) ;
     /*background-color: #f05998cc;
@@ -120,7 +160,7 @@ div.sticky
     /*background-color: #1c1c1cde;
     background-color: #1c1c1cbc;
     /*background-color: rgba(124, 59, 34, 0.8);
-    /*background-color: rgba(218, 33, 79, 0.7);*/
+    /*background-color: rgba(218, 33, 79, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,25 +179,37 @@ div.sticky
 #register
 {
     padding-left: 25px;
-    /*border-radius: 50px;*/
     height: 40px;
     font-size: 18px;
     font-weight: bold;
-   /* border: #1c1c1c 2px solid;*/
 }
 #register_btn
 {
     width: 200px;
-    /*border-radius: 50px;*/
     font-weight: bold;
-    background-color: #ff5a60;
+    background-color: var(--baseColor);
     border: none;
 }
 #register_btn:hover
 {
-    background-color: #f05998cc;
-}
+    background-color: #cd2e33a3;
+} */
 
+
+/* EMS */
+.EMS{
+    width: 100%;
+    height: auto;
+    padding-top: 50px ;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.EMS > p{
+    padding-inline: 100px;
+}
 
 
 
@@ -464,7 +516,7 @@ div.sticky
                                 /*CONTACT_US*/
 #CONTACT_US
 {
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     height: 1100px;
 }
 .contact_us
@@ -526,9 +578,15 @@ div.sticky
     width: 300px;
     margin-top: 20px;
     /*border-radius: 20px;*/
+    background-color: var(--baseColor);
+    border: none;
+    outline: solid white;
     font-weight: bold;
+    transition: .5s;
 }
-
+#form_btn:hover{
+    box-shadow: 0 0 30px #fff;
+}
 #hr_4
 {
     height: 5px;
@@ -543,7 +601,7 @@ div.sticky
 .FOOTER
 {
     padding-top: 50px;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     background-size: cover;
     height: 400px;
 }
@@ -576,15 +634,30 @@ div.sticky
     text-decoration: none;
     color: white;
 }
+.social_media_links i{
+    transition: .3s;
+}
 .social_media_links i:hover
 {
-    font-size: 28px;
-    color: rgb(218, 42, 71);
+    transform: scale(1.2);
+    color: whitesmoke;
 }
 
-
-
-
+.credits{
+    transform: translateY(100px);
+}
+.credits > a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.credits>a:hover{
+    transform: scale(1.2);
+    color: #1c1c1c;
+}
+.credits>a >b{
+    letter-spacing: .5px;
+}
 
 /*-----------------------------------------------MEDIA_QUERY-----------------------------------------------*/
 
@@ -598,13 +671,15 @@ body
     padding: 0%;
     margin: 0%;
 }
-
+.credits {
+    transform: translateY(420px);
+}
                                      /*HEADER*/
 .Header
 {
     width: 100%;
     /*background-color: #1c1c1c;*/
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     height: 500px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -660,13 +735,13 @@ body
 
 .Bg_img
 {
-    height: 500px;
+    height: 200px;
     width: 100%;
-    background-image: url("../img/background_img.png");
+    background-image: url("../img/finalBg.jpg");
     background-size: cover;
-    background-position: left;
+    background-position: center;
     display: flex;
-}
+}/* 
 .Registeration_form
 {
     width: 100%;
@@ -697,9 +772,24 @@ body
     width: 200px;
     border-radius: 50px;
     font-weight: bold;
+} */
+
+
+/* EMS */
+.EMS {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    background-color: white;
+    text-align:justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-
+.EMS>p {
+    padding-inline: 40px;
+}
 
 
                                     /*ABOUT_US*/
@@ -995,7 +1085,7 @@ body
 #CONTACT_US
 {
     width: 100%;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     height: 1500px;
 }
 .contact_us
@@ -1076,7 +1166,7 @@ body
 {
     width: 100%;
     margin-top: 50px;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     background-size: cover;
     height: 700px;
 }
@@ -1150,7 +1240,7 @@ body
 .Header
 {
     width: 100%;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     height: 200px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -1537,7 +1627,7 @@ body
 #CONTACT_US
 {
     width: 100%;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     height: 1500px;
 }
 .contact_us
@@ -1618,7 +1708,7 @@ body
 .FOOTER
 {
     margin-top: 50px;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     background-size: cover;
     height: 800px;
 }
@@ -1702,7 +1792,7 @@ body
 .Header
 {
     width: 100%;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     height: 200px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -2089,7 +2179,7 @@ body
 #CONTACT_US
 {
     width: 100%;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     height: 1500px;
 }
 .contact_us
@@ -2170,7 +2260,7 @@ body
 .FOOTER
 {
     margin-top: 50px;
-    background-color: #d9475c;
+    background-color: var(--baseColor);
     background-size: cover;
     height: 600px;
 }

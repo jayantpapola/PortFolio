@@ -223,8 +223,10 @@ const Projects = () => {
             <div className="project project4">
                 <div className="projectInfo" style={projectInfo} onClick={()=>setProjectInfo({top:'100%'})}>
                     <h2>Freelance Website</h2>
-                    <p>Fully Responsive Matrimonial Webiste made on html,css,Javascript for a freelance project.</p>
-                    <div className="getProjectLink"><a href="Matrimonial-Webpage/index.html" target='_blank'>Get Link</a></div>
+                    <p>Fully Responsive Matrimonial Webiste made on html,css,Javascript for a freelance project.
+                        Used Formspree for sending form details to email  
+                    </p>
+                    <div className="getProjectLink"><a href="Exclusive-Matrimonial/index.html" target='_blank'>Get Link</a></div>
                 </div>
                 <div className="prevBtn" onClick={()=>setCount3(count3-1)}><i class="fa-solid fa-angle-left"></i></div>
                 <div className="nextBtn"  onClick={()=>setCount3(count3+1)}><i class="fa-solid fa-angle-right"></i></div>

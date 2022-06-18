@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matrimonial</title>
+    <title>Exclusive Matrimonial</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
@@ -15,12 +16,19 @@
     </style>
 </head>
 <body>
+    
 
     <!-----HEADER-->
     <div class="container-fluid Header" id="HEADER">
+
+        <!-- Fixed Numbers -->
+        <div class="phone_number">
+            <b>Contact :</b> 9911084433 / 9953531387
+        </div>
+
         <div class="container">
             <div class="Logo">
-                <span>Exclusive</span>
+                <img src="img/Logo.png" alt="">
             </div>
 
             <!-----Navigation_Bar-->
@@ -63,7 +71,7 @@
         </div>
 
         <div class="col-md-4 Registeration_form">
-            <form class="form">
+            <!-- <form class="form">
 
                 <h2>REGISTER</h2>
                 <div style="background-color: white;height: 5px;width: 300px;"></div>
@@ -79,11 +87,31 @@
 
                 <button type="submit"  class="btn btn-primary btn-lg" id="register_btn">Submit</button>
                 
-            </form>    
+            </form>     -->
         </div>
 
     </div> 
 
+
+
+    <div class="EMS">
+        <span id="heading">What EMS Stands for?</span>
+        <!-- <div id="hr"></div> -->
+        <p>Dominating the match-making industry for over a decade, we at <b>Exclusive Matrimonial Services Pvt. Ltd.</b> are a team of
+        professional aficionados who are set out to re-define matrimony. Comprehending the needs of today’s eligible singles, we
+        cater to an extensive database of marriage prospects, not only in India but all across the globe. Over 20 zealous
+        teammates operate out of our plush office in South Delhi. And with their unrivalled managerial skills, we are able to
+        meticulously scan of all newly registered profiles and on-board esteemed, affluent, top-notched and high profile
+        clientele. The functional expertise helps convert our unswerving efforts into remarkable results. We further proud
+        ourselves for being a technology-driven company that adopts a customer-centric approach and imparts higher authenticity.</p>
+        
+        <p>Priding ourselves on being one among the top marriage bureau in Delhi, <b>Exclusive Matrimonial Services</b> offer copious
+        choices, not only in India but from all across the globe. We have eased the matchmaking challenges and distance is no
+        longer a constraint. Marriage is a lustrous tie of affection and esteem, and we understand the profundity of social
+        services we are rendering to the society. With times evolving, e-marriages is your way of finding a perfect match in
+        today’s world. The concept of elite matrimony has become popular too and has transmuted the avenues of interface among
+        the youngsters. Our extensive database provides our clienteles with affluent, glitterati and jet-set suitors.</p>
+    </div>
 
 
 
@@ -157,7 +185,7 @@
 
                 <div class="service_box col-md-4">
                     <div class="service_content card">
-                        <img class="card-img" src="img/pexels-photo-4307793.jpeg" >
+                        <img class="card-img" src="img/service-09.jpg" >
                         <div class="card-body">
                             <h3>Introduction</h3>
                             <hr>
@@ -173,7 +201,7 @@
 
                 <div class="service_box col-md-4">
                     <div class="service_content card">
-                        <img class="card-img" src="img/service-02.jpg">
+                        <img class="card-img" src="img/service-05.jpg">
                         <div class="card-body">
                             <h3>Confidential</h3>
                             <hr>
@@ -349,15 +377,37 @@
             <span id="heading_3">Contact Us</span>
             <div id="hr_3"></div>
 
-            <form class="form-group col-md-12" name="form" method="post" onsubmit="return form_validation()">
+            <!-- HomePage Contact Form -->
+            <form class="form-group col-md-12" name="form" method="post" action="https://formspree.io/f/mdobjqee">
 
                 <div class="row form-inline col-md-12">
-                    <input class="form-control col-md-6" id="inline" name="fname" placeholder="Name"> 
-                    <input class="form-control col-md-6" id="inline" name="phone" placeholder="Phone">
+                    <input class="form-control col-md-6" 
+                        type="text" 
+                        id="inline" 
+                        name="name" 
+                        placeholder="Name" 
+                        required
+                        autocomplete="off"
+                    > 
+                    <input class="form-control col-md-6"
+                        type="number" 
+                        id="inline" 
+                        name="phone" 
+                        min="9"
+                        placeholder="Phone" 
+                        required
+                        autocomplete="off"
+                     >
                 </div>
 
                 <div class="row col-md-12">
-                    <textarea class="form-control" id="message" rows="6" placeholder="Message..."></textarea>
+                    <textarea class="form-control"
+                        name="message"
+                        id="message" 
+                        rows="6" 
+                        placeholder="Message..."
+                        required
+                     ></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-lg" id="form_btn">Submit</button>
@@ -402,17 +452,17 @@
                     </div>
                     <br>
                     <div class="social_media_links">
-                        <a href="https://www.instagram.com" target="_blank">
+                        <a href="https://www.instagram.com/exclusivematrimonialservices/" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                         
                         <span style="color: #1c1c1c;">-</span>
-                        <a href="https://www.facebook.com/" target="_blank">
+                        <a href="https://www.facebook.com/ExclusiveMatrimonialServices" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         
                         <span style="color: #1c1c1c;">-</span>
-                        <a href="https://twitter.com/" target="_blank">
+                        <a href="https://twitter.com/ExclusiveMatri" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
                         
@@ -427,6 +477,12 @@
                         </a>
                         
                     </div>
+
+                    <!-- <div class="credits">
+                        Website created by:<a href="https://www.instagram.com/jayantpapola/" target="_blank">
+                           <b>Jayant Papola <i class="fab fa-instagram"></i></b> 
+                        </a>
+                    </div> -->
 
                 </div>
             </div>
