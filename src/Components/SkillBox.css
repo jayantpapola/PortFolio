@@ -214,6 +214,7 @@
     transition: .5s;
     border-radius: 50%;
     cursor: pointer;
+    transform-style: preserve-3d;
     /* animation: float 4s ease-in-out 3s infinite; */
 } 
 .more_AboutMe img:hover{

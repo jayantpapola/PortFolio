@@ -226,7 +226,7 @@ const Projects = () => {
                     <p>Fully Responsive Matrimonial Webiste made on html,css,Javascript for a freelance project.
                         Used Formspree for sending form details to email  
                     </p>
-                    <div className="getProjectLink"><a href="Exclusive-Matrimonial/index.html" target='_blank'>Get Link</a></div>
+                    <div className="getProjectLink"><a href="Exclusive-Matrimonial/main.html" target='_blank'>Get Link</a></div>
                 </div>
                 <div className="prevBtn" onClick={()=>setCount3(count3-1)}><i class="fa-solid fa-angle-left"></i></div>
                 <div className="nextBtn"  onClick={()=>setCount3(count3+1)}><i class="fa-solid fa-angle-right"></i></div>
@@ -239,7 +239,7 @@ const Projects = () => {
                 <div className="projectInfo" style={projectInfo2} onClick={()=>setProjectInfo2({top:'100%'})}>
                     <h2>Basic Website</h2>
                     <p>Used bootstrap, owl carousel, html, css</p>
-                    <div className="getProjectLink"><a href="Jayant-Project_2/index.html" target='_blank'>Get Link</a></div>
+                    <div className="getProjectLink"><a href="Jayant-Project_2/main.html" target='_blank'>Get Link</a></div>
                 </div>
                 <div className="prevBtn" onClick={()=>setCount4(count4-1)}><i class="fa-solid fa-angle-left"></i></div>
                 <div className="nextBtn"  onClick={()=>setCount4(count4+1)}><i class="fa-solid fa-angle-right"></i></div>
